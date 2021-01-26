@@ -7,6 +7,7 @@ import 'package:share/share.dart';
 import 'package:flutter/material.dart';
 import 'package:buscador_gifs/user interface/home_page.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'user interface/gif_page.dart';
 
 int main(){
   runApp(MaterialApp(
