@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
 //-------------------------------------------------  _getGifs   -------------------------------------------------------------
   Future<Map> _getGifs() async {
     http.Response response;
-    if (_search == null)
+    if(_search == null || _search.isEmpty)
       response = await http.get(
           "https://api.giphy.com/v1/gifs/trending?api_key=hERcFNNwE959tg9GF3qR34FFcFUypPgr&limit=20&rating=g");
     else
